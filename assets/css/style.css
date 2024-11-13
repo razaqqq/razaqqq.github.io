@@ -329,7 +329,6 @@ nav.navbar.bootsnav .navbar-toggle i{color: #d92cf9;}
 --------------------------------------*/
 
 .education {
-    background:  #f9fbfd;
     padding-top:  50px;
 }
 .education-horizontal-timeline {
@@ -365,6 +364,17 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 /*.timeline-horizontal-border*/
 
 /*.education-horizontal-timeline*/
+
+
+/*-------------------------------------
+        7.  My Project
+--------------------------------------*/
+
+.my-project { 
+    background:  #f9fbfd;
+    padding-top:  50px;
+ }
+
 
 /*-------------------------------------
         6.  Skills
@@ -666,6 +676,36 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     transform:scale(1);
     top:0;
 }/*.isotope-overlay*/
+
+
+
+
+/*-------------------------------------
+        10. Certificate
+--------------------------------------*/
+
+.certificate {
+    padding:  50px 0 100px;
+    border:  1px solid #e5ebf2;
+}
+
+.certificate-image-grid div {
+    width: 33%;
+    height: 240px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+  
+  .certificate-image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    margin: 10px;
+  }
+
+
 
 /*-------------------------------------
         10. Clients
