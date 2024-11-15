@@ -375,6 +375,66 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     padding-top:  50px;
  }
 
+ .myProjectColumn {
+    display: flex;
+    flex-direction: column;
+ }
+
+ .myProjectChild1 {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    margin-bottom: 5vh;
+ }
+
+ .my-project-h2 a {
+    font: italic small-caps bold 28px Georgia, serif;
+    margin-bottom: 5vh;
+    margin-top: 5vh;
+ }
+
+ .myProjectChild2 {
+
+    display: flex;
+    flex-direction: row;
+
+    margin-top: 2vh;
+    margin-bottom: 3vh;
+    background-color: rgba(0,0,0,.1);
+    margin-right: 5vh;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    padding-right: 3vh;
+    
+ }
+
+ .myProjectChild2 .myProjectImage {
+
+ }
+
+ .myProjectChild2 .myProjectImage img {
+    height: 50vh;
+    width: 70vh;
+ }
+
+ .myProjectChild2 .myProjectDesc {
+    align-content: space-around;
+ }
+
+ .myProjectChild2 .myProjectDesc div {
+    margin-bottom: 3vh;
+ }
+
+ .myProjectChild2 .myProjectDesc .showMore {
+    margin-top: 5vh;
+    background-color: aqua;
+    padding-left: 3vh;
+    padding-right: 3vh;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    border-radius: 10px;
+    text-align: center;
+ }
 
 /*-------------------------------------
         6.  Skills
