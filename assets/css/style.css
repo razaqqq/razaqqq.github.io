@@ -382,9 +382,11 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 
  .myProjectChild1 {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     flex-direction: row;
     margin-bottom: 5vh;
+    justify-content: center;
+    align-items: center;
  }
 
  .my-project-h2 a {
@@ -405,6 +407,9 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     padding-top: 5vh;
     padding-bottom: 5vh;
     padding-right: 3vh;
+    width: 50vh;
+    box-shadow: 5px 10px 8px 10px rgba(238, 238, 238, 0.5);
+
     
  }
 
