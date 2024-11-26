@@ -190,7 +190,7 @@ nav.navbar.bootsnav .navbar-toggle i{color: #d92cf9;}
     align-items: center;
     justify-content: center;
     position:relative;
-    background:url(../images/about/welcome-banner.jpg)no-repeat;
+    background:url(../images/my_photo/my_photo_2.jpg)no-repeat;
     background-size:cover;
     background-position: center;
     height:890px;
@@ -284,6 +284,7 @@ nav.navbar.bootsnav .navbar-toggle i{color: #d92cf9;}
 .single-about-img img {
     max-width: 500px;
     height: 468px;
+    margin-left: 40px;
 }
 .about-list-icon{
     display: flex;
