@@ -423,9 +423,51 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     width: 70vh;
  }
 
+ .myProjectChildLeptop2 .myProjectImage img {
+    height: 30vh;
+    width: 50vh;
+ } 
+
+ .myProjectChildLeptop2 .myProjectDesc {
+    align-content: space-around;
+ }
+
  .myProjectChild2 .myProjectDesc {
     align-content: space-around;
  }
+
+ .myProjectChildLeptop2 {
+    display: flex;
+    flex-direction: row;
+
+    margin-top: 2vh;
+    margin-bottom: 3vh;
+    background-color: rgba(0,0,0,.1);
+    margin-right: 5vh;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    padding-right: 3vh;
+    padding-left: 3vh;
+    width: 50vh;
+    box-shadow: 5px 10px 8px 10px rgba(238, 238, 238, 0.5);
+ }
+
+ .myProjectChildLeptop2 .myProjectDesc div {
+    margin-bottom: 3vh;
+ }
+
+ .myProjectChildLeptop2 .myProjectDesc .showMore {
+    margin-top: 5vh;
+    background-color: aqua;
+    padding-left: 3vh;
+    padding-right: 3vh;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    border-radius: 10px;
+    text-align: center;
+ }
+
+
 
  .myProjectChild2 .myProjectDesc div {
     margin-bottom: 3vh;
@@ -756,8 +798,8 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 }
 
 .certificate-image-grid img {
-    width: 33%;
-    height: 300px;
+    width: 60vh;
+    height: 40vh;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
