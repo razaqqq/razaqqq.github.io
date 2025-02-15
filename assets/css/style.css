@@ -449,6 +449,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     padding-right: 3vh;
     padding-left: 3vh;
     width: 50vh;
+    height: 300px;
     box-shadow: 5px 10px 8px 10px rgba(238, 238, 238, 0.5);
  }
 
