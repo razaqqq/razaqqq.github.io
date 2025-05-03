@@ -379,6 +379,10 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
  .myProjectColumn {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
+    column-gap: 100px;
+    row-gap: 100px;
+
  }
 
  .myProjectChild1 {
@@ -391,10 +395,20 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 
  }
 
+ .my-project-h2{
+    width: 100%;
+
+    align-items: center;
+    align-self: center;
+    align-content: center;
+    text-align: center;
+ }
+
  .my-project-h2 a {
     font: italic small-caps bold 28px Georgia, serif;
     margin-bottom: 5vh;
     margin-top: 5vh;
+   
  }
 
  .myProjectChild2 {
@@ -450,7 +464,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 
     margin-top: 2vh;
     margin-bottom: 3vh;
-    background-color: rgba(0,0,0,.1);
+    background-color: rgba(144, 198, 124, 0.5);
     margin-right: 5vh;
     padding-top: 5vh;
     padding-bottom: 5vh;
@@ -458,9 +472,13 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     padding-left: 3vh;
     width: 60vh;
     height: 500px;
- 
-    box-shadow: 5px 10px 8px 10px rgba(238, 238, 238, 0.5);
+    border-radius: 300px;
+    box-shadow: 5px 10px 8px 10px rgba(238, 238, 238, 0.9);
  }
+
+ .myProjectChildLeptop2:not(:last-child) {
+    margin-right: 80px;
+  }
 
  .myProjectWebsitePlaform {
     display: flex;
