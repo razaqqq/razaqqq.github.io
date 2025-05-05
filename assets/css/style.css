@@ -441,7 +441,21 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
  .myProjectChildLeptop2 .myProjectImage img {
     height: 50vh;
     width: 60vh;
+    object-fit: cover;
+   
+    margin-left: -10px;
+    
  } 
+
+
+ .imageLeptopStyle {
+    object-fit: contain !important;
+    height: 70vh !important;
+    width: 60vh !important;
+    margin-left: -10px !important;
+    margin-top: -100px;
+   
+ }
 
  .myProjectChildLeptop2 .myProjectImage {
     justify-content: center;
@@ -464,7 +478,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 
     margin-top: 2vh;
     margin-bottom: 3vh;
-    background-color: rgba(144, 198, 124, 0.5);
+   
     margin-right: 5vh;
     padding-top: 5vh;
     padding-bottom: 5vh;
@@ -476,6 +490,22 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     box-shadow: 5px 10px 8px 10px rgba(238, 238, 238, 0.9);
  }
 
+.backgroundColourGreen {
+    background-color: rgba(144, 198, 124, 0.5);
+}
+
+.backgroundColourGreenLight {
+    background-color: rgba(225, 238, 188, 0.5);
+}
+
+.backgroundColourGreenMedium {
+    background-color: rgba(103, 174, 110, 0.5);
+}
+
+.backgroundColourGreenMediumLight {
+    background-color: rgba(144, 198, 124, 0.5);
+}
+
  .myProjectChildLeptop2:not(:last-child) {
     margin-right: 80px;
   }
@@ -485,7 +515,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     flex-direction: row;
     margin-top: 2vh;
     margin-bottom: 3vh;
-    background-color: rgba(0,0,0,.1);
+
     margin-right: 5vh;
     padding-top: 5vh;
     padding-bottom: 5vh;
@@ -536,13 +566,15 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 
  .myProjectChildLeptop2 .myProjectDesc .showMore {
     margin-top: 5vh;
-    background-color: aqua;
+
     padding-left: 3vh;
     padding-right: 3vh;
     padding-top: 1vh;
     padding-bottom: 1vh;
-    border-radius: 10px;
-    text-align: center;
+
+    width: 15vh;
+    height: 5vh;
+
  }
 
 
@@ -561,6 +593,34 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     border-radius: 10px;
     text-align: center;
  }
+
+
+ .blue-button {
+    background: linear-gradient(135deg, #3a86ff, #0053ba);
+    color: white;
+    padding: 1rem 2.5rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(58, 134, 255, 0.5);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    user-select: none;
+    outline-offset: 4px;
+  }
+
+ .blue-button:hover,
+  .blue-button:focus {
+    background: linear-gradient(135deg, #0053ba, #3a86ff);
+    box-shadow: 0 8px 16px rgba(58, 134, 255, 0.7);
+    transform: translateY(-3px);
+    outline: none;
+  }
+ .blue-button:active {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(58, 134, 255, 0.4);
+  }
 
 /*-------------------------------------
         6.  Skills
