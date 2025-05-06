@@ -440,13 +440,15 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 
  .myProjectChildLeptop2 .myProjectImage img {
     height: 50vh;
-    width: 60vh;
+    width: 50vh;
     object-fit: cover;
    
     margin-left: -10px;
     
  } 
 
+
+ 
 
  .imageLeptopStyle {
     object-fit: contain !important;
@@ -485,16 +487,15 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     flex-direction: row;
 
     margin-top: 2vh;
-    margin-bottom: 3vh;
+    margin-bottom: 10vh;
    
-    margin-right: 5vh;
-    padding-top: 5vh;
+
     padding-bottom: 5vh;
-    padding-right: 3vh;
-    padding-left: 3vh;
+    padding-right: 5vh;
+    padding-left: 5vh;
+    padding-top: 5vh;
     width: 60vh;
-    height: 500px;
-    border-radius: 300px;
+    border-radius: 100px;
     box-shadow: 5px 10px 8px 10px rgba(238, 238, 238, 0.9);
  }
 
