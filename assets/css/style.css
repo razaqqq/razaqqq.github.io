@@ -43,6 +43,7 @@ body{
 	color: #676a81;
 	background: #fff;
     max-width:1920px;
+
     margin:0 auto;
 	overflow-x:hidden;
 }
@@ -194,6 +195,7 @@ nav.navbar.bootsnav .navbar-toggle i{color: #B5FCCD;}
     background-size:cover;
     background-position: center;
     height:890px;
+
 }
 .welcome-hero:before{
     position:absolute;
@@ -448,7 +450,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
  } 
 
 
- 
+
 
  .imageLeptopStyle {
     object-fit: contain !important;
