@@ -715,7 +715,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
       @media only screen and (max-width: 600px) {
         .myProjectChildLeptop2 {
             flex-direction: column;
-       
+        
         }
         .myProjectChildLeptop2 .myProjectImage img {
   
@@ -727,12 +727,20 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
             justify-content: center;
             align-content: center;
             width: 80%;
-            height: 20vh;
+     
          }
          .myProjectChildLeptop2 .myProjectDesc {
   
             width: 80%;
+          
         
+         }
+         .myProjectChildLeptop2 .myProjectDesc div h2 {
+            font-size: 24px;
+         }
+        
+         .myProjectChildLeptop2 .myProjectDesc div p {
+            font-size: 16px;
          }
          .myProjectChildLeptop2 .myProjectDesc .showMore {
             
