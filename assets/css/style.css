@@ -381,9 +381,8 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
  .myProjectColumn {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    column-gap: 100px;
-    row-gap: 100px;
+
+  
 
  }
 
@@ -442,10 +441,11 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 
  .myProjectChildLeptop2 .myProjectImage img {
     height: 50vh;
-    width: 30vw;
+
     object-fit: cover;
-   
-    margin-left: -10px;
+    
+    width: 100%;
+    align-items: center;
     
  } 
 
@@ -465,19 +465,23 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     justify-content: center;
     align-items: center;
     align-content: center;
+    display: flex;
+    width: 25%;
  }
 
  .myProjectChildLeptop2 .myProjectDesc {
     align-content: space-around;
-    width: 70vw;
+    margin-left: 5vw;
+    width: 75%;
+
  }
 
  .myProjectChildLeptop2 .myProjectDesc div h2 {
-    font-size: 24px;
+    font-size: 40px;
  }
 
  .myProjectChildLeptop2 .myProjectDesc div p {
-    font-size: 20;
+    font-size: 18px;
  }
 
  .myProjectChild2 .myProjectDesc {
@@ -492,34 +496,36 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     margin-bottom: 10vh;
    
 
-    padding-bottom: 5vh;
+    padding-bottom: 3vh;
     padding-right: 5vw;
     padding-left: 5vw;
-    padding-top: 5vh;
-    width: 60vw;
-    border-radius: 100px;
-    box-shadow: 5px 10px 8px 10px rgba(238, 238, 238, 0.9);
+    padding-top: 3vh;
+    width: 80vw;
+   
+
+    border-radius: 50px;
+    box-shadow: 5px 10px 8px 10px rgba(238, 238, 238, 0.5);
  }
 
 .backgroundColourGreen {
-    background-color: rgba(58, 89, 209, 0.2);
+    background-color: rgba(58, 89, 209, 0.1);
 }
 
 .backgroundColourGreenLight {
-    background-color: rgba(33, 52, 72, 0.2);
+    background-color: rgba(33, 52, 72, 0.1);
 }
 
 .backgroundColourGreenMedium {
-    background-color: rgba(22, 153, 118, 0.2)
+    background-color: rgba(22, 153, 118, 0.1)
 }
 
 .backgroundColourGreenMediumLight {
-    background-color: rgba(190, 61, 42, 0.2)
+    background-color: rgba(190, 61, 42, 0.1)
 }
 
- .myProjectChildLeptop2:not(:last-child) {
+ /* .myProjectChildLeptop2:not(:last-child) {
     margin-right: 80px;
-  }
+  } */
 
  .myProjectWebsitePlaform {
     display: flex;
@@ -632,6 +638,120 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     transform: translateY(-1px);
     box-shadow: 0 4px 8px rgba(58, 134, 255, 0.4);
   }
+
+
+
+  .slideshow-container {
+    position: relative;
+ 
+    max-width: 100vw;
+    height: 60vh;
+    max-height: 100vh;
+    overflow: hidden;
+    border-radius: 20px;
+    background-color: #000;
+   
+    touch-action: pan-y;
+
+  }
+
+
+  .slides {
+    display: flex;
+    height: 100%;
+    transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+
+  }
+  .slide {
+    flex: 0 0 100%;
+    height: 100%;
+   
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+  }
+
+  /* Caption */
+  .caption {
+    position: absolute;
+    bottom: 25px;
+    left: 20px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.2rem;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.75);
+    pointer-events: none;
+  }
+
+    /* Controls */
+    .nav-button {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: rgba(0,0,0,0.4);
+        border: none;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        color: white; 
+        font-size: 20px;
+        cursor: pointer;
+        transition: background 0.3s;
+        user-select: none;
+        z-index: 10;
+      }
+    
+      .nav-button:hover {
+        background: rgba(0,0,0,0.7);
+      }
+      .nav-prev {
+        left: 10px;
+      }
+      .nav-next {
+        right: 10px;
+      }
+
+
+      @media only screen and (max-width: 600px) {
+        .myProjectChildLeptop2 {
+            flex-direction: column;
+       
+        }
+        .myProjectChildLeptop2 .myProjectImage img {
+  
+            object-fit: contain;
+       
+            
+         } 
+        .myProjectChildLeptop2 .myProjectImage {
+            justify-content: center;
+            align-content: center;
+            width: 80%;
+            height: 20vh;
+         }
+         .myProjectChildLeptop2 .myProjectDesc {
+  
+            width: 80%;
+        
+         }
+         .myProjectChildLeptop2 .myProjectDesc .showMore {
+            
+            width: 20vw;
+        
+         }
+      }
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*-------------------------------------
         6.  Skills
@@ -1154,4 +1274,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     0%   {bottom:0px;}
     100%  {bottom:7px;}
 }
-/*========================Thank you=================
+/*========================Thank you=================*/
+
+
+
