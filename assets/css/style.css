@@ -399,18 +399,44 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
  .my-project-h2{
     width: 100%;
 
-    align-items: center;
-    align-self: center;
-    align-content: center;
-    text-align: center;
+
+
+
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #000; /* changed to black */
+    position: relative;
+    padding-bottom: 6px;
+    margin-top: 1.5em;
+    margin-bottom: 0.75em;
+    padding-left: 5vw;
+  
+
  }
 
  .my-project-h2 a {
-    font: italic small-caps bold 28px Georgia, serif;
+    /* font: italic small-caps bold 28px Georgia, serif; */
     margin-bottom: 5vh;
-    margin-top: 5vh;
-   
+    margin-top: 5vh; 
+    font-size: 2rem;
+    font-weight: 600;
+    position: relative;
+    padding-bottom: 6px;
+    margin-top: 1.5em;
+    margin-bottom: 0.75em;
+    
+    /* Gradient text styles */
+    background: linear-gradient(90deg, #ff7e5f, #feb47b, #ff9a3d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    /* fallback for non-webkit browsers */
+    background-clip: text;
+    color: transparent;
+    /* subtle shadow */
+
  }
+
+
 
  .myProjectChild2 {
 
@@ -478,10 +504,12 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 
  .myProjectChildLeptop2 .myProjectDesc div h2 {
     font-size: 40px;
+    color: white;
  }
 
  .myProjectChildLeptop2 .myProjectDesc div p {
     font-size: 18px;
+    color: white;
  }
 
  .myProjectChild2 .myProjectDesc {
@@ -504,23 +532,26 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
    
 
     border-radius: 50px;
-    box-shadow: 5px 10px 8px 10px rgba(238, 238, 238, 0.5);
+    box-shadow: 5px 10px 8px 10px rgba(33, 52, 72, 0.2);
  }
 
 .backgroundColourGreen {
-    background-color: rgba(58, 89, 209, 0.1);
+    background: linear-gradient(135deg, #4a90e2, #6b8dd6, #a3bffa);
+    /* background-color: rgba(58, 89, 209, 0.1); */
 }
 
 .backgroundColourGreenLight {
-    background-color: rgba(33, 52, 72, 0.1);
+    background: linear-gradient(135deg, #56ab2f, #86d26f, #a8e063); /* warm green 3-color gradient */
+    /* background-color: rgba(33, 52, 72, 0.1); */
 }
 
 .backgroundColourGreenMedium {
-    background-color: rgba(22, 153, 118, 0.1)
+    background: linear-gradient(135deg, #000000, #2c2c2c, #1a1a1a); /* black 3-color gradient */
+ 
 }
 
 .backgroundColourGreenMediumLight {
-    background-color: rgba(190, 61, 42, 0.1)
+    background: linear-gradient(135deg, #7b4f24, #a97444, #bc9c6a); /* warm brown 3-color gradient */
 }
 
  /* .myProjectChildLeptop2:not(:last-child) {
@@ -711,17 +742,44 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
         right: 10px;
       }
 
+        /* Stylish horizontal line */
+.myProjectChildLeptop2  .stylish-separator {
+    margin-left: 1vw;
+    margin-right: 1vw;
+
+    align-self: center;
+    height: 20vh;
+    margin: 40px auto;
+    width: 2px;
+    border-radius: 12px;
+    background: linear-gradient(90deg, #ff6a00, #ee0979, #ff6a00);
+    box-shadow:
+      0 0 10px #ee0979,
+      inset 0 0 10px #ff6a00;
+  }
+
+
+       /* Alternative hover effect for interactivity - visible on desktop */
+  .stylish-separator:hover {
+    background: linear-gradient(90deg, #00c6ff, #0072ff, #00c6ff);
+    box-shadow:
+      0 0 12px #0072ff,
+      inset 0 0 12px #00c6ff;
+    transition: 0.3s ease;
+  }
+
 
       @media only screen and (max-width: 600px) {
         .myProjectChildLeptop2 {
             flex-direction: column;
-        
+            padding-left: 10vw;
         }
         .myProjectChildLeptop2 .myProjectImage img {
   
             object-fit: contain;
-       
-            
+            margin-top: 3vh;
+            margin-bottom: 3vh;
+ 
          } 
         .myProjectChildLeptop2 .myProjectImage {
             justify-content: center;
@@ -747,6 +805,11 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
             width: 20vw;
         
          }
+         .stylish-separator {
+            height: 4px;
+            margin: 30px auto;
+            border-radius: 8px;
+          }
       }
 
 
@@ -773,14 +836,42 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 
 
 .section-heading h2 {
-    font-size: 40px;
+    /* font-size: 40px;
     font-weight: 600;
     word-spacing: normal;
     text-transform: uppercase;
     padding-bottom: 50px;
-    border-bottom: 1px solid #e5ebf2;
+    border-bottom: 1px solid #e5ebf2; */
+
+    font-size: 8rem;
+    font-weight: 800;
+    background: linear-gradient(90deg, #007cf0, #00dfd8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    text-shadow: 1px 1px 5px rgba(0, 223, 216, 0.4);
+    transition: transform 0.3s ease, text-shadow 0.3s ease;
+    cursor: default;
+    margin-top: 5vh;
+    margin-bottom: 10vh;
+    /* Bevel effect using multiple layered shadows */
 
 }
+
+.section-heading h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 4px;
+    border-radius: 2px;
+    background: linear-gradient(90deg, #007cf0, #00dfd8);
+    box-shadow: 0 0 8px #00dfd8;
+    transition: width 0.3s ease;
+}
+
 .single-progress-txt {
     display: flex;
 }
@@ -834,6 +925,26 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
    transform: translateX(-50%);
    margin-left: 0;
 }
+
+
+
+
+ /* Stylish Separator */
+ .stylish-separator {
+    height: 1vh;
+    width: 60vw; /* 80% of viewport width */
+
+    margin: 10vh auto; /* center horizontally */
+    border-radius: 12px;
+    background: linear-gradient(90deg, #4facfe 0%, #00f2fe 100%);
+    box-shadow:
+      0 0 10px #00f2fe,
+      inset 0 0 8px #4facfe;
+    position: relative;
+    overflow: hidden;
+    cursor: default;
+
+  }
 
 /*-------------------------------------
         7. Experience
