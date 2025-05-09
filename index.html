@@ -64,6 +64,9 @@
         <![endif]-->
 
 	<!-- top-area Start -->
+
+
+
 	<header class="top-area">
 		<div class="header-area">
 			<!-- Start Navigation -->
@@ -1157,17 +1160,37 @@
 		</div>
 
 		<div class="certificate-image-grid">
-
-			<img src="./assets/images/certivicate/flutter.jpg" alt="flutter sertificate">
-			<img src="./assets/images/certivicate/git_hub.jpg" alt="github udemy certificate">
-			<img src="./assets/images/certivicate/Modern_Javascript_Udemy.jpg" alt="lavascript udemy certificate">
-			<img src="./assets/images/certivicate/python_sertyicat.jpg" alt="phyton udemy certivicate">
-			<img src="./assets/images/certivicate/udemy_C++_TimBuchalka.jpg" alt="c++ udemy certivicate">
-			<img src="./assets/images/certivicate/Udemy_Java_TimBuchalka.jpg" alt="java udemy certivicate">
-			<img src="./assets/images/certivicate/UDEMY_OPENCV.jpg"
-				alt="opencv  real-time optimized Computer Vision library udemy certivicate">
-			<img src="./assets/images/certivicate/google garage.jpg" alt="google garage certivicate">
-			<img src="./assets/images/certivicate/php_laravel.jpg" alt="php laravel certivicate">
+			<div class="thumbnail-container" role="button" tabindex="0" aria-label="Click to preview large image">
+				<img src="./assets/images/certivicate/flutter.jpg" alt="flutter sertificate" id="thumbnail">		
+			</div>
+			<div class="thumbnail-container" role="button" tabindex="0" aria-label="Click to preview large image">
+				<img src="./assets/images/certivicate/git_hub.jpg" alt="github udemy certificate" id="thumbnail">
+			</div>
+			<div class="thumbnail-container" role="button" tabindex="0" aria-label="Click to preview large image">
+				<img src="./assets/images/certivicate/Modern_Javascript_Udemy.jpg" alt="lavascript udemy certificate" id="thumbnail">
+			</div>
+			<div class="thumbnail-container" role="button" tabindex="0" aria-label="Click to preview large image">
+				<img src="./assets/images/certivicate/python_sertyicat.jpg" alt="phyton udemy certivicate" id="thumbnail">
+			</div>
+			<div class="thumbnail-container" role="button" tabindex="0" aria-label="Click to preview large image">
+				<img src="./assets/images/certivicate/udemy_C++_TimBuchalka.jpg" alt="c++ udemy certivicate" id="thumbnail">
+			</div>
+			<div class="thumbnail-container" role="button" tabindex="0" aria-label="Click to preview large image">
+				<img src="./assets/images/certivicate/Udemy_Java_TimBuchalka.jpg" alt="java udemy certivicate" id="thumbnail">
+			</div>
+			<div class="thumbnail-container" role="button" tabindex="0" aria-label="Click to preview large image">
+				<img src="./assets/images/certivicate/UDEMY_OPENCV.jpg" alt="opencv  real-time optimized Computer Vision library udemy certivicate" id="thumbnail">
+			</div>
+			<div class="thumbnail-container" role="button" tabindex="0" aria-label="Click to preview large image">
+				<img src="./assets/images/certivicate/google garage.jpg" alt="google garage certivicate" id="thumbnail">
+			</div>
+			<div class="thumbnail-container" role="button" tabindex="0" aria-label="Click to preview large image">
+				<img src="./assets/images/certivicate/php_laravel.jpg" alt="php laravel certivicate" id="thumbnail">
+			</div>
+		</div>
+		<div id="lightbox-overlay" role="dialog" aria-modal="true" aria-labelledby="preview-label" tabindex="-1">
+			<span id="close-btn" aria-label="Close magnified image">&times;</span>
+			<img src="" alt="Maximized preview" id="lightbox-image" />
 		</div>
 
 	</section>
@@ -1326,7 +1349,7 @@
 	<!--Custom JS-->
 	<script src="assets/js/custom.js"></script>
 
-	<script src="assets/js/slide-show-project.js"></script>
+	<script src="assets/js/certivicate_with_preview.js"></script>
 
 
 

@@ -1208,6 +1208,101 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 
 
 
+    /* Container for thumbnail image */
+    .thumbnail-container {
+        margin-right: 3vw;
+        margin-bottom: 3vw;
+        border-radius: 10px;
+        overflow: hidden;
+        cursor: pointer;
+        box-shadow: 0 3px 5px rgba(0,0,0,0.2);
+        transition: transform 0.25s ease;
+      }
+      .thumbnail-container:hover,
+      .thumbnail-container:focus {
+        outline: none;
+        transform: scale(1.05);
+        box-shadow: 0 8px 26px rgba(0,0,0,0.3);
+      }
+      /* Thumbnail image fills container */
+      .thumbnail-container img {
+        
+      }
+    
+        /* Lightbox overlay */
+  #lightbox-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(20, 20, 20, 0.9);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+    padding: 15px;
+  }
+
+  #lightbox-overlay.active {
+    display: flex;
+  }
+  /* Maximized preview image */
+  #lightbox-image {
+    max-width: 95vw;
+    max-height: 95vh;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.8);
+    animation: zoomIn 0.25s ease forwards;
+  }
+
+
+  @keyframes zoomIn {
+    from {
+      transform: scale(0.8);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+
+
+    /* Close button */
+    #close-btn {
+        position: fixed;
+        top: 20px;
+        right: 25px;
+        font-size: 2.4rem;
+        color: #fff;
+        font-weight: bold;
+        cursor: pointer;
+        user-select: none;
+        transition: color 0.2s ease;
+        z-index: 2100;
+      }
+      #close-btn:hover,
+      #close-btn:focus {
+        color: #ff5252;
+        outline: none;
+      }
+
+        /* Mobile adjustments */
+  @media (max-width: 600px) {
+    .thumbnail-container {
+      max-width: 100vw;
+      max-height: 50vh;
+      border-radius: 0;
+    }
+    #lightbox-image {
+      max-width: 100vw;
+      max-height: 90vh;
+      border-radius: 0;
+    }
+  }
+
+
 /*-------------------------------------
         10. Clients
 --------------------------------------*/
