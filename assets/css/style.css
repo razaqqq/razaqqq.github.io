@@ -183,6 +183,19 @@ nav.navbar.bootsnav .navbar-toggle i{color: #B5FCCD;}
 
 
 
+
+
+.dot {
+  height: 1vh;
+  width: 1vh;
+  background-color: black;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 1vw;
+}
+
+
+
 /*-------------------------------------
         3.  Welcome-hero
 --------------------------------------*/
