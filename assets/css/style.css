@@ -105,6 +105,13 @@ html,body{
     position: relative;
     z-index: 9999;
 }
+
+
+.container .myProjectColumn .fontSizeMedium  {
+  font-size: 1.5rem;
+  color: #333;
+}
+
 /* @media (min-width: 1024px){} */
 nav.navbar.bootsnav.no-background {
     background-color: #fff;
